@@ -1,0 +1,31 @@
+# 环境变量与密钥
+.env
+.env.*
+!.env.example
+
+# Python 虚拟环境与缓存
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# 敏感运行数据与媒体存储（严禁提交到 Git）
+backend/storage/sessions/*
+!backend/storage/sessions/.gitkeep
+backend/storage/uploads/*
+!backend/storage/uploads/.gitkeep
+backend/storage/temp/*
+!backend/storage/temp/.gitkeep
+
+# 前端依赖与构建产物
+frontend/node_modules/
+frontend/dist/
+
+# IDE 与系统临时文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
